@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha() {
+		document.write("<br><br>");
+	}
+
+	function escreva(texto) {
+		document.write(texto);
+	}
+
+	function mostraTitulo(texto) {
+		document.write("***********     ")
+		document.write(texto)
+		document.write("     ***********")
+		pulaLinha();
+
+	}
+
+	function calculaIMC(peso, altura) {
+		var imc = peso / (altura * altura);
+		escreva("O IMC calculado é: " + imc.toFixed(2));
+		pulaLinha();
+	}
+
+	
+	var pesoPessoa1 = 110;
+	var alturaPessoa1 = 1.75;
+
+	var pesoPessoa2 = 95;
+	var alturaPessoa2 = 1.65;
+
+	var pesoPessoa3 = 84;
+	var alturaPessoa3 = 1.75;
+
+	var pesoPessoa4 = 65;
+	var alturaPessoa4 = 1.65;
+	
+
+	mostraTitulo("<h2>PROGRAMA QUE CALCULA IMC</h2>");
+
+	calculaIMC(pesoPessoa1, alturaPessoa1);
+	calculaIMC(pesoPessoa2, alturaPessoa2);
+	calculaIMC(pesoPessoa3, alturaPessoa3);
+	calculaIMC(pesoPessoa4, alturaPessoa4);
+	
+
+
+</script>
