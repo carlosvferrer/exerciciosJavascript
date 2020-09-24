@@ -19,8 +19,8 @@
 
 	function calculaIMC(peso, altura) {
 		var imc = peso / (altura * altura);
-		escreva("O IMC calculado é: " + imc.toFixed(2));
-		pulaLinha();
+		return imc;
+		
 	}
 
 	
@@ -39,11 +39,19 @@
 
 	mostraTitulo("<h2>PROGRAMA QUE CALCULA IMC</h2>");
 
-	calculaIMC(pesoPessoa1, alturaPessoa1);
-	calculaIMC(pesoPessoa2, alturaPessoa2);
-	calculaIMC(pesoPessoa3, alturaPessoa3);
-	calculaIMC(pesoPessoa4, alturaPessoa4);
+	var imc1 = calculaIMC(110, 1.75);
+	var imc2 = calculaIMC(95, 1.65);
+	var imc3 = calculaIMC(84, 1.75);
+	var imc4 = calculaIMC(65, 1.65);
 	
+	escreva("O IMC calculado da pessoa 1 é: " + imc1.toFixed(2));
+	pulaLinha();
+	escreva("O IMC calculado da pessoa 2 é: " + imc2.toFixed(2));
+	pulaLinha();
+	escreva("O IMC calculado da pessoa 3 é: " + imc3.toFixed(2));
+	pulaLinha();
+	escreva("O IMC calculado da pessoa 4 é: " + imc4.toFixed(2));
+	pulaLinha();
 
 
 </script>
