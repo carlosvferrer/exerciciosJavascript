@@ -6,7 +6,11 @@
 	
 	function pulaLinha() {
 		document.write("<br>");
-		}
+	}
+	
+	function mostra(frase) {
+		document.write(frase);	
+	}
 	
 	
 	tanque = 40; //tanque do carro de 40 litros.
@@ -15,10 +19,10 @@
 	caminhoComAlcool = 300;
 	consumoDeAlcool = caminhoComAlcool / tanque;
 
-		document.write("O consumo de gasolina foi de " + consumoDeGasolina.toFixed(2) + " litros.");
+		mostra("O consumo de gasolina foi de " + consumoDeGasolina.toFixed(2) + " litros.");
 		pulaLinha();
 
-		document.write("Já o consumo com álcool foi de " + consumoDeAlcool.toFixed(2) + " litros.");
+		mostra("Já o consumo com álcool foi de " + consumoDeAlcool.toFixed(2) + " litros.");
 		pulaLinha();
 
 </script>
