@@ -1,57 +1,30 @@
 <meta charset="UTF-8">
 
+<h2>Programa para calcular IMC</h2>
+
 <script>
 	function pulaLinha() {
-		document.write("<br><br>");
+		document.write("<br>");
 	}
 
-	function escreva(texto) {
-		document.write(texto);
+	function mostra(frase) {
+		document.write(frase)
 		pulaLinha();
 	}
 
-	function mostraTitulo(texto) {
-		document.write("***********     ")
-		document.write(texto)
-		document.write("     ***********")
-		pulaLinha();
-
-	}
-
-	function calculaIMC(peso, altura) {
+	function calculaIMC(altura, peso) {
+		
 		var imc = peso / (altura * altura);
 		return imc;
-		
 	}
 
 	
-	var pesoPessoa1 = 110;
-	var alturaPessoa1 = 1.75;
-
-	var pesoPessoa2 = 95;
-	var alturaPessoa2 = 1.65;
-
-	var pesoPessoa3 = 84;
-	var alturaPessoa3 = 1.75;
-
-	var pesoPessoa4 = 65;
-	var alturaPessoa4 = 1.65;
+	var imcCarlos = calculaIMC(1.75, 73);
+	var imcAmigo = calculaIMC(1.72, 68);
 	
-
-	mostraTitulo("<h2>PROGRAMA QUE CALCULA IMC</h2>");
-
-	var imc1 = calculaIMC(110, 1.75);
-	var imc2 = calculaIMC(95, 1.65);
-	var imc3 = calculaIMC(84, 1.75);
-	var imc4 = calculaIMC(65, 1.65);
+	mostra(imcCarlos);
+	mostra(imcAmigo);
 	
-	escreva("O IMC calculado da pessoa 1 é: " + imc1.toFixed(2));
-
-	escreva("O IMC calculado da pessoa 2 é: " + imc2.toFixed(2));
-
-	escreva("O IMC calculado da pessoa 3 é: " + imc3.toFixed(2));
-
-	escreva("O IMC calculado da pessoa 4 é: " + imc4.toFixed(2));
 
 
 
