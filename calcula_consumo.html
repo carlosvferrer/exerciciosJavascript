@@ -9,7 +9,8 @@
 	}
 	
 	function mostra(frase) {
-		document.write(frase);	
+		document.write(frase);
+		pulaLinha();
 	}
 	
 	
@@ -20,9 +21,8 @@
 	consumoDeAlcool = caminhoComAlcool / tanque;
 
 		mostra("O consumo de gasolina foi de " + consumoDeGasolina.toFixed(2) + " litros.");
-		pulaLinha();
 
 		mostra("Já o consumo com álcool foi de " + consumoDeAlcool.toFixed(2) + " litros.");
-		pulaLinha();
+
 
 </script>

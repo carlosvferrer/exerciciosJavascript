@@ -22,17 +22,20 @@ function pulaLinha() {
   document.write("<br><br>");
 }
 
+function mostra(frase) {
+  document.write(frase);
+  pulaLinha();
+}
+
 var tanqueCarro = 40;
 var caminhoComGasolina = 480;
 var consumoGasolina = caminhoComGasolina / tanqueCarro;
 
-document.write("O consumo de gasolina usando o tanque de combustível do carro completo é de: " + consumoGasolina + " litros.");
-pulaLinha();
+mostra("O consumo de gasolina usando o tanque de combustível do carro completo é de: " + consumoGasolina + " litros.");
 
 var caminhoComAlcool = 300;
 var consumoDeAlcool = caminhoComAlcool / tanqueCarro;
 
-document.write("O consumo de alcool usando o tanque de combustível completo do carro é de: " + consumoDeAlcool + " litros");
-pulaLinha();
+mostra("O consumo de alcool usando o tanque de combustível completo do carro é de: " + consumoDeAlcool + " litros");
 
 </script>
